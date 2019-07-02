@@ -9,6 +9,12 @@
 # General
 --------------------------------------------------------------*/
 
+@font-face {
+  font-family: 'kalibers-webfont';
+  src:  url('fonts/kalibers-webfont.woff2') format('woff2'),
+        url('fonts/kalibers-webfont.woff') format('woff');
+}
+
 body {
   background: rgb(0, 0, 0);
   color: rgb(199, 199, 199);
@@ -153,6 +159,7 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  position: relative; top: -5px;
 }
 
 /*--------------------------------------------------------------
@@ -194,7 +201,12 @@ h6 {
   text-align: center;
 }
 
+
+
+
+
 #intro .intro-content h2 {
+  font-family: "kalibers-webfont";
   color: #ffffff;
   margin-bottom: 30px;
   font-size: 64px;
@@ -202,13 +214,18 @@ h6 {
 }
 
 #intro .intro-content h2 span {
+  font-family: "kalibers-webfont";
   color: #b593d1;
   text-decoration: none;
 }
 
+
+
+
+
 #intro .intro-content .btn-get-started,
 #intro .intro-content .btn-projects {
-  font-family: "Raleway", sans-serif;
+  font-family: "Play", sans-serif;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -221,13 +238,13 @@ h6 {
 }
 
 #intro .intro-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+  background: #01278f;
+  border: 2px solid #01278f;
 }
 
 #intro .intro-content .btn-get-started:hover {
   background: none;
-  color: #0c2e8a;
+  color: #01278f;
 }
 
 #intro .intro-content .btn-projects {
@@ -351,7 +368,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu .menu-active > a {
-  color: #50d8af;
+  color: #b150d8;
 }
 
 .nav-menu > li {
@@ -362,7 +379,7 @@ h6 {
   margin: 4px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
+  background: rgb(19, 19, 19);
 }
 
 .nav-menu ul li {
@@ -371,7 +388,7 @@ h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: rgb(241, 241, 241);
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -506,8 +523,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header h2 {
+  font-family: "Play";
   font-size: 32px;
-  color: #0c2e8a;
+  color: #b150d8;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -547,16 +565,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .content h2 {
-  color: #0c2e8a;
+  color: #01278f;
   font-weight: 700;
   font-size: 36px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Play", sans-serif;
 }
 
 #about .content h3 {
   color: #555;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 26px;
   font-style: italic;
 }
@@ -619,7 +637,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
+  background: #01278f;
   background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -819,13 +837,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #call-to-action {
-  background: #081e5b;
+  background: #001b64;
   background-size: cover;
   padding: 40px 0;
 }
 
 #call-to-action .cta-title {
   color: #fff;
+  font-family: "Play";
   font-size: 28px;
   font-weight: 700;
 }
@@ -835,7 +854,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
@@ -857,8 +876,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #team {
-  background: rgb(71, 71, 71);
-  padding: 30px 0 0 0;
+  background: rgb(0, 0, 0);
+  padding: 30px 0 20px 0;
 }
 
 #team .member {
@@ -1020,7 +1039,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #footer {
-  background: #f2f5f8;
+  background: #131313;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -1037,7 +1056,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .credits a {
-  color: #0c2e8a;
+  color: #01278f;
 }
 
 @media (min-width: 768px) {
